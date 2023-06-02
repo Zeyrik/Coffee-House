@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    @apply scroll-smooth;
+}
+.wrapper{
+    @apply flex flex-col h-screen w-full;
+}
+.hero-section{
+    @apply bg-[url('../img/coffee.jpg')] bg-center bg-cover bg-no-repeat mb-14 py-[265px];
+}
+.img{
+    @apply block max-w-full h-auto order-2 md:order-none mb-5;
+}
+.card-block{
+    @apply  h-full w-full fixed top-0 flex items-center justify-center bg-black/50;
+}
+.card{
+    @apply bg-white p-5 flex flex-col;
+}
+.btn-more{
+    @apply  bg-[#817070] py-2 px-5 text-white mt-auto;
+}
+.title{
+    @apply text-lg text-black text-center  font-bold mb-3 lg:mb-6  capitalize;
+}
+.text{
+    @apply text-xl font-light text-black;
+}
+.card-text{
+    @apply text-lg lg:text-xl font-light text-black mb-3;
+}
+header div nav ul li{
+    @apply mx-6 my-6 lg:my-0;
+    }
+.link{
+    @apply block text-2xl hover:text-[#a59e9e] leading-loose;
+}
+

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/coffee-cup.ico">
+    <link rel="stylesheet" href="public/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Coffee House</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container mx-auto p-5 flex items-center justify-between ">
+                <h1 class="text-2xl md:text-4xl font-medium text-black uppercase "><a href="#home">Coffee House</a>
+                </h1>
+
+                <nav class="flex justify-between">
+                    <ul class="font-light text-center lg:flex lg:items-center z-[1] -left-full sm:-left-2/3 md:-left-3/4 lg:z-auto h-screen w-full sm:w-2/3 sm:2/3 md:2/4 lg:static fixed lg:h-full lg:w-auto lg:py-0 py-4
+                   top-0 transition-all ease-in duration-300 text-black bg-white uppercase ;">
+                        <li><a class="link duration-500" href="#home">Главная</a></li>
+                        <li><a class="link duration-500" href="#story">О нас</a></li>
+                        <li><a class="link duration-500" href="#blog">Блог</a></li>
+                        <li><a class="link duration-500" href="#subscribe">Подписка</a></li>
+                    </ul>
+                </nav>
+                <button class="btn text-2xl lg:hidden block z-[2]">
+                    <ion-icon data-btn="close" class="button-switch" name="menu"></ion-icon>
+                </button>
+            </div>
+        </header>
+        <main class="grow ">
+            <section class="hero-section">
+                <div class="flex items-center flex-col">
+                    <h2 class=" after:content-['']  after:block after:mx-auto after:my-5 after:w-2/4 after:h-[10px]  after:bg-[#817070] block text-4xl lg:text-6xl pb-4 text-white text-center uppercase font-bold  ">
+                        Take
+                        your
+                        time</h2>
+                </div>
+            </section>
+            <article class="container mx-auto sm:px-4 sm:mb-14 ">
+                <h4 class="text-center mb-4 lg:mb-14 text-2xl font-bold"><a id="story">О нас</a></h4>
+                <div class="grid lg:grid-cols-2 lg:gap-5 ">
+                    <div class="mx-2 order-2 lg:order-none mb-3 lg:mb-0"><img src="./img/coffeecraft.jpg" alt=""></div>
+                    <p class="text-2xl font-light flex items-center mx-3 my-3 lg:pl-5 order-1 lg:order-none">Первое
+                        заведение было открыто в 2015 году. Оно
+                        сразу же приобрело уважение местных жителей, поскольку в нем был не только очень вкусный кофе,
+                        но и приятная атмосфера, а так же душевное общение с сотрудниками. На данный момент COFFEE HOUSE
+                        имеет более 200 филиалов по всей стране. У вас есть шанс лично убедиться в вышеперечисленных
+                        плюсах. Приходите, мы вас ждем! </p>
+                </div>
+            </article>
+            <section class="bg-[#EFEFEF]">
+                <div class="container mx-auto px-4 py-14">
+                    <h4 class="text-center mb-14 text-2xl font-bold "><a id="blog">Блог</a></h4>
+                    <ul class="grid lg:grid-cols-3 gap-[70px]">
+                        <li class="card border-box">
+                            <h5 class="title lg:text-left">Daily coffee news</h5>
+                            <div class="lg:flex lg:flex-col lg:items-start lg:grow">
+                                <div class="img "><img src="./img/cap.jpg" alt=""></div>
+                                <p class="text flex items-center  mb-5 ">Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipiscing
+                                    elit. Aenean varius eget arcu quis cursus.
+                                    Nunc id tortor imperdiet, vestibulum orci sed, gravida orci. Cras a enim ac elit
+                                    eleifend
+                                    euismod.
+                                    Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipiscing
+                                    elit. Aenean varius eget arcu quis cursus.
+                                    Nunc id tortor imperdiet, vestibulum orci sed, gravida orci. Cras a enim ac elit
+                                    eleifend
+                                    euismod.</p>
+                                <button data-btn="block" class="btn-more">Подробнее</button>
+                            </div>
+                            <div data-div="modal" class="card-block opacity-0 -left-full ">
+                                <div
+                                    class="bg-white w-full h-full overflow-y-scroll lg:overflow-hidden lg:w-3/4 lg:h-3/4 p-5 relative">
+                                    <button class="absolute top-0 right-0">
+                                        <ion-icon data-btn="closeCard" class=" w-8 h-8" name="close-outline"></ion-icon>
+                                    </button>
+                                    <div>
+                                        <h5 class="title">Daily coffee news</h5>
+                                        <div class="grid lg:grid-cols-2 gap-3">
+                                            <div class="img "><img src="./img/cap.jpg" alt=""></div>
+                                            <p class="card-text flex items-center ">Lorem ipsum dolor sit amet,
+                                                consectetur
+                                                adipisicing elit. Iste, molestias, exercitationem blanditiis eaque, id
+                                                itaque veniam qui impedit voluptate ratione tempora sapiente quia.
+                                                Dolorum odio quis sed asperiores ipsam, nesciunt ea amet quia
+                                                praesentium magni excepturi aperiam aspernatur corporis mollitia aliquid
+                                                voluptatum officia maxime! Sapiente reiciendis culpa quidem est nesciunt
+                                                atque modi ad dolor deserunt itaque quo labore iste, amet odio inventore
+                                                autem in nemo aliquid fugit officia. Eligendi ut tempora assumenda sunt
+                                                id pariatur fugit eum voluptas cupiditate modi?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card border-box ">
+                            <h5 class="title lg:text-left">Dutch coffee chains</h5>
+                            <div class="lg:flex lg:flex-col lg:items-start lg:grow">
+                                <div class="img "><img src="./img/capandcoffee.jpg" alt=""></div>
+                                <p class="text flex items-center  mb-5 order-1 lg:order-none">Lorem ipsum dolor sit
+                                    amet,
+                                    consectetur
+                                    adipiscing
+                                    elit. Aenean varius eget arcu quis cursus.
+                                   </p>
+                                <button data-btn="block" class="btn-more">Подробнее</button>
+                            </div>
+                            <div data-div="modal" class="card-block opacity-0 -left-full ">
+                                <div
+                                    class="bg-white w-full h-full overflow-y-scroll lg:overflow-hidden lg:w-3/4 lg:h-3/4 p-5 relative">
+                                    <button class="absolute top-0 right-0">
+                                        <ion-icon data-btn="closeCard" class=" w-8 h-8" name="close-outline"></ion-icon>
+
+                                    </button>
+                                    <div>
+                                        <h5 class="title">Dutch coffee chains</h5>
+                                        <div class="grid lg:grid-cols-2 gap-3">
+                                            <div class="img order-2 lg:order-none "><img src="./img/capandcoffee.jpg"
+                                                    alt=""></div>
+                                            <p class="card-text flex items-center ">Lorem ipsum dolor sit amet,
+                                                consectetur
+                                                adipisicing elit. Iste, molestias, exercitationem blanditiis eaque, id
+                                                itaque veniam qui impedit voluptate ratione tempora sapiente quia.
+                                                Dolorum
+                                                odio quis sed asperiores ipsam, nesciunt ea amet quia praesentium magni
+                                                excepturi aperiam aspernatur corporis mollitia aliquid voluptatum
+                                                officia
+                                                maxime! Sapiente reiciendis culpa quidem est nesciunt atque modi ad
+                                                dolor
+                                                deserunt itaque quo labore iste, amet odio inventore autem in nemo
+                                                aliquid
+                                                fugit officia. Eligendi ut tempora assumenda sunt id pariatur fugit eum
+                                                voluptas cupiditate modi?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card border-box ">
+                            <h5 class="title lg:text-left">Start up in minneapolis</h5>
+                            <div class="lg:flex lg:flex-col lg:items-start lg:grow">
+                                <div class="img order-2 md:order-none inline"><img src="./img/machine.jpg " alt="">
+                                </div>
+                                <p class="text flex items-center  mb-5 order-1 lg:order-none">Lorem ipsum dolor sit
+                                    amet,
+                                    consectetur
+                                    adipiscing
+                                    elit. Aenean varius eget arcu quis cursus.
+                                    Nunc id tortor imperdiet, vestibulum orci sed, gravida orci. Cras a enim ac elit
+                                    eleifend
+                                    euismod.</p>
+                                <button data-btn="block" class="btn-more">Подробнее</button>
+                            </div>
+                            <div data-div="modal" class="card-block opacity-0 -left-full ">
+                                <div
+                                    class="bg-white w-full h-full overflow-y-scroll lg:overflow-hidden lg:w-3/4 lg:h-3/4 p-5 relative">
+                                    <button class="absolute top-0 right-0">
+                                        <ion-icon data-btn="closeCard" class=" w-8 h-8" name="close-outline"></ion-icon>
+                                    </button>
+                                    <div>
+                                        <h5 class="title">Start up in minneapolis</h5>
+                                        <div class="grid lg:grid-cols-2 gap-3">
+                                            <div class="img order-2 lg:order-none"><img src="./img/machine.jpg" alt="">
+                                            </div>
+                                            <p class="card-text flex items-center ">Lorem ipsum dolor sit amet,
+                                                consectetur
+                                                adipisicing elit. Iste, molestias, exercitationem blanditiis eaque, id
+                                                itaque veniam qui impedit voluptate ratione tempora sapiente quia.
+                                                Dolorum
+                                                odio quis sed asperiores ipsam, nesciunt ea amet quia praesentium magni
+                                                excepturi aperiam aspernatur corporis mollitia aliquid voluptatum
+                                                officia
+                                                maxime! Sapiente reiciendis culpa quidem est nesciunt atque modi ad
+                                                dolor
+                                                deserunt itaque quo labore iste, amet odio inventore autem in nemo
+                                                aliquid
+                                                fugit officia. Eligendi ut tempora assumenda sunt id pariatur fugit eum
+                                                voluptas cupiditate modi?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="bg-[#817070]">
+                <div class="flex items-center flex-col">
+                    <div class="py-4 items-center flex flex-col">
+                        <h3 class="my-8 text-white uppercase font-medium text-4xl"><a id="subscribe">Подписаться</a>
+                        </h3>
+                        <input
+                            class="focus:border-2 focus:border-solid focus:border-black  text-center text-xl outline-none font-light bg-[#817070] text-white py-2 px-3 lg:px-[93px] mb-8 border-2 border-solid border-white"
+                            type="email" name="email" placeholder="Введите ваш email адрес">
+                        <button
+                            class="bg-white text-[#817070] py-3 px-8 uppercase text-xl mb-8 hover:text-[#817070] hover:bg-[#dbd5d5]">Подтвердить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white flex justify-center py-2">
+                <small class="font-lignt text-base lg:text-xl uppercase inline-block">&copy; Copyright 2021</small>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
